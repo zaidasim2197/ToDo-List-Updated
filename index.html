@@ -8,7 +8,7 @@
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
-<!-- <style>
+<style>
 
     body{
         text-align: center;
@@ -66,7 +66,7 @@
         border-color: rgb(43, 40, 40);
     }
     
-</style> -->
+</style>
 
 <body>
     <div class="container1">
@@ -79,10 +79,14 @@
             <button type="submit">Add</button>
         </form>
         <button onclick="getAllTodos()">Refresh</button>
+        <button onclick="getDelete()">Delete All</button>
         <h3 id="result"> </h3>
     </div>
 
     <script>
+
+let api = 'https://shy-gold-gorilla-sock.cyclic.app/'
+
         function postTodo() {
             let todoText = document.querySelector("#todo").value
 
@@ -123,8 +127,20 @@
                     console.log(error);
                 })
         }
+        
 
-        setInterval(getAllTodos, 1000);
+setInterval(getAllTodos, 2000);
+
+        function getDelete() {
+            axios.delete('&{api}del')
+            .then(function (response) {
+                    console.log(response.data);
+            })
+            .catch((error) => {
+                console.log(error)
+            })
+        }
+       
 
     </script>
 
