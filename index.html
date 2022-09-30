@@ -12,16 +12,22 @@
 <style>
 
     body{
-   
+        columns: auto ;  
         font-size: 17px;
         background-color: rgb(201, 192, 192);
+        background-image: url("https://citrusbits.com/wp-content/uploads/2021/02/AdobeStock_305109236-scaled.jpeg")
     }
     * {
         box-sizing: border-box;
         
     }
     
- 
+ .container1{
+   display: block;
+   margin-left: 41%;
+   margin-right: 41%;   
+   
+ }
     input[type=text] {
         
         padding: 16px 20px;
@@ -32,7 +38,7 @@
     }
 
     button {
-        background-color:  rgb(187, 166, 166);
+        background-color:  white;
         color: rgb(0, 0, 0);
         padding: 10px 15px;
         margin: 15px 5px;
@@ -44,16 +50,46 @@
         cursor: pointer;
     
     }
+    #ghli{
+        
+    box-shadow: 5px 5px 4px 1px rgb(64, 77, 96);
+  margin-left: 1px;
+  margin-right: 1px;
+    }
+    #result{
+        border: 2px rgb(187, 187, 187);
+        border-radius: 5px;
+      background-color: white;
+        border-style: solid;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 250px;
+        margin-left: 250px;
+    }
   
 </style> 
 
 <body>
-    <div class="container1">
-       <center> <i><h1><u style="color: rgb(71, 53, 53);">"Share On Air"</u></h1></i>
+    
+   <div id="ghli">
+    <center><u><i><h2 style="color: rgb(232, 223, 223)  ;">"Zaid's To-Do Application"</h2></u></i></center>
+</div>
+<div class="container1">
 
+
+    <button style="width: 50px; background-color: rgb(98, 103, 113)  ;  margin-right: 10px; box-shadow: 5px 5px 4px 1px rgb(64, 77, 96);"><a href="https://github.com/zaidasim2197" style="color: black; text-shadow: black"></a> <i class="fa fa-github" style="color: black; font-size: 15px;"></i></button>
+    
+    <button style="width: 50px;background-color: #0072b1 ; margin-left: 10px ; box-shadow: 5px 5px 4px 1px rgb(64, 77, 96); "><a href="https://www.linkedin.com/in/zaid-asim-49a751245/" style="color: black; text-shadow: black;"></a>  <i class="fa fa-linkedin" style="color: black;  font-size: 15px;"></i></button>
+    <!-- <i><h1 style=" margin-left: 38%;text-shadow: black;"><u style="color: rgb(71, 53, 53); ">"Share On Air"</u></h1></i> -->
+  
+    
    
-        <form onsubmit="postTodo(); return false"></center>
-          <br><b style="font-size: 22px; color:rgb(71, 53, 53) ; "><u><i>Enter:</i></u></b>
+    </div>
+   
+        <form onsubmit="postTodo(); return false">
+            
+           
+          <b style="font-size: 22px; color:rgb(232, 223, 223) ; "><u><i>Enter:</i></u></b>
         <input id="todo" type="text" style="width: 75% ; margin-right: 15px; padding: 18px ; box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);" placeholder="New Task.." >
           <button type="submit">Add</button><center>
             
@@ -63,9 +99,9 @@
         <button onclick="getDelete()" style="width: 15% ; ">Delete All</button>
     
         <h3 id="result"> </h3>
-        <button style="font-size:12px"><a href="https://github.com/zaidasim2197" style="color: black; text-shadow: black;">GITHUB</a>      <i class="fa fa-github" style="color: black; font-size: 15px;"></i></button>
+       
     </center>
-    </div>
+  
 
     <script>
 
