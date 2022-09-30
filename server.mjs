@@ -6,8 +6,18 @@ const port = process.env.PORT || 3000;
 
 let todos = [];
 
+//   UNIFORM INTERFACE:
+
+//  post/todo   
+//  get /todos              get server sy get krny k liya 
+//  put /updatetodo         put is used for updating todo
+//  delete /removetodo      remove krny k liya delete lgta hai 
+//  get /todo/:id           for single get todo
+
+// kisi ek todo k sath khelny k liya /:id daalni hogi end mai 
+
 app.use(express.json());
-app.use(cors())
+app.use(cors());
 
 app.post('/todo', (req, res) => {
     
