@@ -47,6 +47,7 @@
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
         float: center;
         cursor: pointer;
+        transition: all 0.15s;
     
     }
     #ghli{
@@ -65,6 +66,12 @@
         margin-right: 250px;
         margin-left: 250px;
     }
+    button:hover{
+        opacity: 0.8;
+    }
+    input:hover{
+        opacity: 0.8;
+    }
   
 </style> 
 
@@ -76,9 +83,11 @@
 <div class="container1">
 
 
-    <button style="width: 50px; background-color: rgb(98, 103, 113)  ;  margin-right: 10px; box-shadow: 5px 5px 4px 1px rgb(64, 77, 96);"><a href="https://github.com/zaidasim2197" style="color: black; text-shadow: black"></a> <i class="fa fa-github" style="color: black; font-size: 15px;"></i></button>
+    <button style="width: 50px; background-color: rgb(98, 103, 113)  ;  margin-right: 10px; box-shadow: 5px 5px 4px 1px rgb(64, 77, 96);">
+        <a href="https://github.com/zaidasim2197" style="color: black; text-shadow: black"></a> <i class="fa fa-github" style="color: black; font-size: 15px;"></i></button>
     
-    <button style="width: 50px;background-color: #0072b1 ; margin-left: 10px ; box-shadow: 5px 5px 4px 1px rgb(64, 77, 96); "><a href="https://www.linkedin.com/in/zaid-asim-49a751245/" style="color: black; text-shadow: black;"></a>  <i class="fa fa-linkedin" style="color: black;  font-size: 15px;"></i></button>
+    <button style="width: 50px;background-color: #0072b1 ; margin-left: 10px ; box-shadow: 5px 5px 4px 1px rgb(64, 77, 96); ">
+        <a href="https://www.linkedin.com/in/zaid-asim-49a751245/" style="color: black; text-shadow: black;"></a>  <i class="fa fa-linkedin" style="color: black;  font-size: 15px;"></i></button>
     <!-- <i><h1 style=" margin-left: 38%;text-shadow: black;"><u style="color: rgb(71, 53, 53); ">"Share On Air"</u></h1></i> -->
   
     
@@ -95,7 +104,7 @@
         </form>
 
         <button onclick="getAllTodos()">Refresh</button>
-        <button onclick="getDelete()" style="width: 15% ; ">Delete All</button>
+        <button onclick="getDelete()" style="width: 12% ; ">Delete All</button>
     
         <h3 id="result"> </h3>
        
